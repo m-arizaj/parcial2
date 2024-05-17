@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table">
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Nombre Científico</th>
+              <th>Alimentación</th>
+              <th>Distribución Mundial</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let penguin of penguins">
+              <td>{{ penguin.id }}</td>
+              <td>{{ penguin.nombre }}</td>
+              <td>{{ penguin.nombreCientifico }}</td>
+              <td>{{ penguin.alimentacion }}</td>
+              <td>{{ penguin.distribucionMundial }}</td>
+          </tr>
+      </tbody>
+  </table>
+  <!-- <p class="mt-3">Especie con mayor distribución mundial: {{ penguinConMayorDistribucion }}</p> -->
+</div>
